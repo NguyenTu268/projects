@@ -61,6 +61,7 @@ const SECTIONS_META = [
     accent: "#ff8a3d",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>`
   },
+  /* Tạm ẩn nhóm Casino — bỏ comment đoạn dưới (và các đoạn casino ở FOLDER_DEFAULTS, RAW_PROJECTS) để hiện lại
   {
     id: "casino",
     title: { vi: "Web Review Casino", en: "Casino Review Sites" },
@@ -71,6 +72,7 @@ const SECTIONS_META = [
     accent: "#ff5b1a",
     icon: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="15.5" cy="8.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="8.5" cy="15.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1.2" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.2" fill="currentColor" stroke="none"/></svg>`
   }
+  */
 ];
 
 // Mỗi folder ảnh ứng với 1 category + mô tả mặc định (sửa lại mô tả cho từng site tại RAW_PROJECTS nếu cần riêng biệt)
@@ -89,6 +91,7 @@ const FOLDER_DEFAULTS = {
       en: "A review site for brokers, exchanges and financial tools, comparing fees and reliability."
     }
   },
+  /* Tạm ẩn nhóm Casino cùng với SECTIONS_META và RAW_PROJECTS ở trên/dưới
   casino: {
     category: "casino",
     description: {
@@ -96,6 +99,7 @@ const FOLDER_DEFAULTS = {
       en: "A review site for bookmakers and online casino platforms, rating trustworthiness and bonuses."
     }
   }
+  */
 };
 
 // Danh sách ảnh thật lấy từ images/fresh, images/finance, images/casino
@@ -132,6 +136,7 @@ const RAW_PROJECTS = {
     ["Seven Trading", "seventrading.png", "dark", "http://seventrading.net/"],
     ["Trading Platform Guide", "tradingplatformguide.png", "dark", "https://tradingplatformguide.site"]
   ],
+  /* Tạm ẩn toàn bộ dự án Casino — bỏ comment (và ở SECTIONS_META, FOLDER_DEFAULTS) để hiện lại nhóm này
   casino: [
     ["Best Casino Guide", "bestcasinoguide.png", "dark", "https://bestcasinoguide.site"],
     ["Best Casino Ratings", "bestcasinoratings.png", "dark", "https://bestcasinoratings.vip"],
@@ -152,6 +157,7 @@ const RAW_PROJECTS = {
     ["Trusted Reviews", "trustedreviews.png", "dark", "https://trustedreviews.casino"],
     ["Verified Casino Rating", "verifiedcasinorating.png", "light", "https://verifiedcasinorating.site"]
   ]
+  */
 };
 
 // 3 dự án được đưa lên khối "Dự Án Chủ Lực" ở đầu trang (khớp theo tên) — sửa mô tả riêng cho từng dự án tại đây
