@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Dự Án</title>
+<link rel="stylesheet" href="style.css">
+<script>
+  // Áp theme đã lưu trước khi CSS render để tránh nhấp nháy màu
+  (function () {
+    var savedTheme = localStorage.getItem("portfolio-theme");
+    document.documentElement.setAttribute("data-theme", savedTheme === "dark" ? "dark" : "light");
+    var savedLang = localStorage.getItem("portfolio-lang");
+    document.documentElement.setAttribute("lang", savedLang === "en" ? "en" : "vi");
+  })();
+</script>
+</head>
+<body>
+
+  <div class="bg-blobs"><div class="blob-3"></div></div>
+  <div class="bg-grid"></div>
+
+  <header class="site-header">
+    <div class="header-grid"></div>
+    <div class="header-top">
+      <div class="eyebrow">
+        <span class="status-dot"></span>
+        <span class="mono">&lt;PORTFOLIO/&gt;</span>
+      </div>
+      <button type="button" id="themeToggle" class="theme-toggle" aria-label="Chuyển giao diện sáng/tối"></button>
+      <button type="button" id="langToggle" class="lang-toggle" aria-label="Chuyển ngôn ngữ">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a13 13 0 0 1 0 18 13 13 0 0 1 0-18Z"/></svg>
+        <span id="langToggleLabel">EN</span>
+      </button>
+    </div>
+    <div class="title-wrap">
+      <h1 id="pageHeading">Portfolio Dự Án WordPress</h1>
+    </div>
+    <p id="pageSubheading">Tổng hợp các website đã thực hiện<span class="cursor">_</span></p>
+    <nav class="section-nav" id="sectionNav">
+      <!-- Các pill điều hướng nhanh tới từng section, render bằng JS -->
+    </nav>
+  </header>
+
+  <main id="sections">
+    <!-- Các section (Web Review Sạch / Tài Chính / Casino) render bằng JS từ projects.js -->
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> — <span id="pageFooter">Portfolio cá nhân</span></p>
+  </footer>
+
+  <script src="projects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
